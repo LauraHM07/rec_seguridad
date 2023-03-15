@@ -7,5 +7,5 @@ import com.laura.seguridad.models.Usuario;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, String>{
-    
+    Usuario findByNameAndPassword(String name, String password);
 }
